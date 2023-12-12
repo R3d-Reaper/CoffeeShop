@@ -1,0 +1,80 @@
+/* Universal */
+
+* {
+    font-family: Helvetica;
+}
+
+
+/* Header */
+
+header {
+    background-color: #eece7c;
+    display: flex;
+    height: 128px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 7.5px;
+}
+
+.logo-name:hover {
+    cursor: pointer;
+}
+
+.logo-name:active {
+    margin-top: 7.5px;
+    box-shadow: 0 0;
+    background-color: gray;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+nav {
+    margin-right: 100px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li+li::before {
+    padding: 0 10px;
+    content: "|";
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Body */
+
+body {
+    background-image: url(coffee-background.jpg);
+    background-size: cover;
+}
