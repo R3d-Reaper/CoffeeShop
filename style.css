@@ -1,0 +1,165 @@
+/* Universal */
+
+* {
+    font-family: Helvetica;
+}
+
+
+/* Header */
+
+header {
+    background-color: hsla(43, 88%, 74%, 0.85);
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1.5px 3px;
+    height: 50px;
+    width: 165px;
+    justify-content: center;
+}
+
+.logo-name:hover {
+    cursor: pointer;
+}
+
+.logo-name:active {
+    margin-top: 3px;
+    box-shadow: 0 0;
+    background-color: gray;
+    color: white;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+nav {
+    margin-right: 100px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li+li::before {
+    padding: 0 10px;
+    content: "|";
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Body */
+
+body {
+    background-image: url(coffee-background.jpg);
+    background-size: cover;
+}
+
+.hero {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.177);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.hero-heading {
+    font-size: 125px;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.hero-subheading {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px
+}
+
+.button-con {
+    margin: 25px 0 25px 25px;
+}
+
+.button-con a{
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.button-con a:hover {
+    border-color: white;
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+.button-con a:active {
+    scale: 0.95;
+}
+
+.hero-button {
+    border: 3px solid black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(143, 143, 143, 0.75);
+    font-size: 25px;
+}
+
+.logo-hero {
+    width: 50px;
+    height: 50px;
+}
+
+/* footer */
+
+footer {
+    background-color: hsla(43, 88%, 74%, 0.85);
+    display: flex;
+    height: 75px;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    left: 0px;
+}
+
