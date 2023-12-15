@@ -133,6 +133,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto 100px;
+    border-radius: 50px;
+    box-shadow: 1.5px 1.5px 10px 3.5px black;
+    padding-bottom: 134px;
 }
 
 figure {
@@ -163,6 +167,16 @@ figure {
     border-radius: 10px;
     border: 2px solid black;
     font-weight: bold;
+    transition: border 0.5s, color 0.5s;
+}
+
+.order-button:hover {
+    border: 2px solid brown;
+    color: brown;
+}
+
+.order-button:active {
+    transform: scale(.95);
 }
 
 /* footer */
